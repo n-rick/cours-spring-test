@@ -16,12 +16,12 @@ public class CoursSpringTestApplication {
         SpringApplication.run(CoursSpringTestApplication.class, args);
     }
 
-//    @Bean
-//    public CommandLineRunner start() {
-//        return args -> {
-//            personneService.save(new Personne("Wick", "John", 45));
-//            personneService.save(new Personne("Linus", "Benjamin", 30));
-//            personneService.save(new Personne("Pradel", "Jacques", 65));
-//        };
-//    }
+    @Bean
+    public CommandLineRunner start() {
+        return args -> {
+            personneService.save(new Personne("Wick", "John", 45));
+            personneService.save(new Personne("Linus", "Benjamin", 30));
+            personneService.save(new Personne("Pradel", "Jacques", 65));
+        };
+    }
 }
